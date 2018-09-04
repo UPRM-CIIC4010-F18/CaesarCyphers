@@ -3,9 +3,15 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		double sqrt2 = Math.sqrt(2.0);
+		CaesarCypher c = new CaesarCypher(3);
 		
+		String clear = "HELLO"; // H -> K  E -> H  L -> O, O -> R
 		
+		String cyphered = c.encode(clear);
+		
+		String correct = "KHOOR";
+		
+		System.out.println(cyphered);
 		
 	}
 	
